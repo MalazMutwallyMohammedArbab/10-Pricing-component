@@ -1,0 +1,130 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+.priceSection{
+  display: block;
+  margin: 3rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  background-color: #f8f9fa;
+  background: url(./images/bottom.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(./images/top.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px){
+  .container {
+    max-width: 960px;
+  }
+}
+.shadow{
+  padding: 15px;
+  border-radius: 10px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+.subtitle{
+  display: flex;
+  justify-content: center;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  max-width: 100%;
+}
+.card{
+  background-color: white;
+  padding: 10px 70px;
+}
+.card2{
+  background-color: #9f1cf1;
+  padding: 30px 95px;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.card, .card2{
+  flex: 0 0 auto;
+  width: (100% / 3);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,.15);
+  margin-bottom: 10px;
+}
+@media (max-width: 992px){
+  .card, .card2 {
+    flex: 0 0 auto;
+    width: 66%;
+  }
+}
+.cardBody{
+  text-align: center;
+}
+h3{
+  font-weight: 500;
+}
+h4{
+  font-weight: 500;
+}
+h1{
+  font-size: 30px;
+}
+button{
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+.btn{
+  background-color: #9f1cf1;
+  color: white;
+}
+.button{
+  background-color: white;
+  color: #9f1cf1;
+}
+center{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.toggle{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: #9f1cf1;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+.toggle:after{
+  content: '';
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: white;
+  top: -2px;
+  left: -2px;
+  transition: all 0.5s;
+}
+.checkbox:checked + .toggle::after{
+  left: 25px;
+}
+.checkbox:checked + .toggle{
+  background-color: gray;
+}
+.checkbox{
+  display: none;
+} 
